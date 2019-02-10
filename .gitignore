@@ -1,0 +1,16 @@
+ffmpeg-4.1-64bit-static/
+*.o
+*.d
+*.version
+*.pc
+*.a
+ffmpeg-4.1/ffmpeg
+ffmpeg-4.1/ffmpeg_g
+ffmpeg-4.1/ffplay
+ffmpeg-4.1/ffplay_g
+ffmpeg-4.1/ffprobe
+ffmpeg-4.1/ffprobe_g
+aom
+build_aom
+libaom
+report.json.bz2
