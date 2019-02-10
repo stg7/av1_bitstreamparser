@@ -162,7 +162,7 @@ static int aom_decode(AVCodecContext *avctx, void *data, int *got_frame,
     const void *iter      = NULL;
     struct aom_image *img;
     int ret;
-    int qp;
+    int qp; // added by stg7
 
     if (aom_codec_decode(&ctx->decoder, avpkt->data, avpkt->size, NULL) !=
         AOM_CODEC_OK) {
@@ -176,8 +176,10 @@ static int aom_decode(AVCodecContext *avctx, void *data, int *got_frame,
         return AVERROR_INVALIDDATA;
     }
 
+    // Modifications by stg7
     aom_codec_control(&ctx->decoder, AOMD_GET_LAST_QUANTIZER, &qp);
     printf("qp=%i\n", qp);
+    // End of Mods
 
     if ((img = aom_codec_get_frame(&ctx->decoder, &iter))) {
         if (img->d_w > img->w || img->d_h > img->h) {
