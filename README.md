@@ -2,7 +2,8 @@
 extracts qp values from av1 bitstreams
 
 this project is based on https://ffmpeg.org/releases/ffmpeg-4.1.tar.xz
-modifications to ffmeg are mostly done in libaomdec.c and marked.
+modifications to ffmeg are mostly done in libaomdec.c and are marked.
+The ffmpeg-4.1 folder contains separate licences for FFmpeg.
 
 Author: Steve Göring
 
